@@ -4,12 +4,20 @@
   "description": "my 1st Hexlet's project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
   },
+  "bin": {
+ "brain-games": "dist/bin/brain-games.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MagayAlex/project-lvl1-s450.git"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "hexlet",
     "junior"
@@ -19,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/MagayAlex/project-lvl1-s450/issues"
   },
-  "homepage": "https://github.com/MagayAlex/project-lvl1-s450#readme",
+  "homepage": "https://github.com/MagayAlex/project-lvl1-s450",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
