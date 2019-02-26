@@ -1,16 +1,14 @@
 {
   "name": "brain-game-108",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my 1st Hexlet's project",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
   "bin": {
- "brain-games": "dist/bin/brain-games.js"
-},
+    "brain-games": "dist/bin/brain-games.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MagayAlex/project-lvl1-s450.git"
@@ -25,7 +23,7 @@
   "author": "Magay Alexander",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MagayAlex/project-lvl1-s450/issues"
+  "url": "https://github.com/MagayAlex/project-lvl1-s450/issues"
   },
   "homepage": "https://github.com/MagayAlex/project-lvl1-s450",
   "devDependencies": {
@@ -33,5 +31,6 @@
     "@babel/core": "^7.3.3",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.1"
-  }
+  },
+  "dependencies": {}
 }
