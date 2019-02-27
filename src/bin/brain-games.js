@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import mainFunc from '..';
+import { brainGreeting } from '..';
 
-mainFunc();
+console.log('Welcome to the BRAIN GAMES!!!');
+brainGreeting();
