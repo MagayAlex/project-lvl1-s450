@@ -18,7 +18,6 @@ const gameCalcBody = () => {
     opertator = '*';
   }
   const question = `${number1} ${opertator} ${number2}`;
-  answer = String(answer);
   return cons(question, answer);
 };
 

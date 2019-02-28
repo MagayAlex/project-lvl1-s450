@@ -15,7 +15,7 @@ export default (header, gameBody) => {
     }
     const pairQA = gameBody();
     const question = car(pairQA);
-    const answer = cdr(pairQA);
+    const answer = String(cdr(pairQA));
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
