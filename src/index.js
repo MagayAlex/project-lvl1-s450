@@ -5,7 +5,7 @@ import brainGreeting from './greeting';
 const attemptsCounter = 3;
 
 export default (header, gameBody) => {
-  console.log('Welcome to the BRAIN GAMES!!!');
+  console.log('\nWelcome to the BRAIN GAMES!!!');
   console.log(`${header}`);
   const userName = brainGreeting();
   const iter = (counter) => {
