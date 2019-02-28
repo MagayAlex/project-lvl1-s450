@@ -1,6 +1,7 @@
 import { cons } from 'hexlet-pairs';
-import { isEven } from '..';
+import game from '..';
 
+const isEven = number => (number % 2 === 0 ? 'yes' : 'no');
 const header = 'Answer "yes" if number even otherwise answer "no".\n';
 const gameEvenBody = () => {
   const question = Math.floor(Math.random() * 80);
@@ -8,4 +9,4 @@ const gameEvenBody = () => {
   return cons(question, answer);
 };
 
-export { header, gameEvenBody };
+export default () => game(header, gameEvenBody);

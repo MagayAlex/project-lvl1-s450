@@ -1,26 +1,21 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
+import brainGreeting from './greeting';
 
 const attemptsCounter = 3;
-const brainGreeting = () => {
-  const userName = readlineSync.question('May i have your name? ');
-  console.log(`Hello, dear ${userName}\n`);
-  return userName;
-};
-const isEven = number => (number % 2 === 0 ? 'yes' : 'no');
 
-const game = (header, gameBody) => {
+export default (header, gameBody) => {
   console.log('Welcome to the BRAIN GAMES!!!');
   console.log(`${header}`);
   const userName = brainGreeting();
   const iter = (counter) => {
-    const pairQA = gameBody();
-    const question = car(pairQA);
-    const answer = cdr(pairQA);
     if (counter === attemptsCounter) {
       console.log(`Congratulations, ${userName}, you win`);
       return;
     }
+    const pairQA = gameBody();
+    const question = car(pairQA);
+    const answer = cdr(pairQA);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
@@ -33,5 +28,3 @@ const game = (header, gameBody) => {
   };
   iter(0);
 };
-
-export { brainGreeting, isEven, game };

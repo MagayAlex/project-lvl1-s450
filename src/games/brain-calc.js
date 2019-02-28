@@ -1,4 +1,5 @@
 import { cons } from 'hexlet-pairs';
+import game from '..';
 
 const header = 'What is the result of the expression?\n';
 const gameCalcBody = () => {
@@ -21,4 +22,4 @@ const gameCalcBody = () => {
   return cons(question, answer);
 };
 
-export { header, gameCalcBody };
+export default () => game(header, gameCalcBody);
