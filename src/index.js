@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
-import brainGreeting from './greeting';
+import { greeting } from './utils';
 
 const attemptsCounter = 3;
 
 export default (header, gameBody) => {
   console.log('\nWelcome to the BRAIN GAMES!!!');
   console.log(`${header}`);
-  const userName = brainGreeting();
+  const userName = greeting();
   const iter = (counter) => {
     if (counter === attemptsCounter) {
       console.log(`Congratulations, ${userName}, you win`);
@@ -15,7 +15,7 @@ export default (header, gameBody) => {
     }
     const pairQA = gameBody();
     const question = car(pairQA);
-    const answer = String(cdr(pairQA));
+    const answer = cdr(pairQA);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
@@ -23,7 +23,7 @@ export default (header, gameBody) => {
       iter(counter + 1);
     } else {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
-      console.log(`Let's try agaain, ${userName}`);
+      console.log(`Let's try again, ${userName}`);
     }
   };
   iter(0);
