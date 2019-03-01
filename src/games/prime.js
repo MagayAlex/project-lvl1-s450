@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import { randomNumber } from '../utils';
+import randomNumber from '../utils';
 import game from '..';
 
 const header = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
