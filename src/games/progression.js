@@ -10,13 +10,16 @@ const gameProgressionBody = () => {
   const startNumber = randomNumber(0, 100);
   const positionOfAnswer = randomNumber(0, progressionLength - 1);
   const listWithQuestion = (count, acc) => {
+    const newElement = startNumber + count * progressionStep;
     if (count === progressionLength) {
       return acc;
+    }
+    if (positionOfAnswer === 0 && count === 1) {
+      return listWithQuestion(count + 1, `.. ${newElement}`);
     }
     if (count === positionOfAnswer) {
       return listWithQuestion(count + 1, `${acc} ..`);
     }
-    const newElement = startNumber + count * progressionStep;
     return listWithQuestion(count + 1, `${acc} ${newElement}`);
   };
   const question = listWithQuestion(1, startNumber);
