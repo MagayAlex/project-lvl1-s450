@@ -8,6 +8,6 @@
 <p><b>install brain-games and play in brain-gcd</b></p>
 <a href="https://asciinema.org/a/LNT2gmm5SGcMMx3dXDglPFEWv" target="_blank"><img src="https://asciinema.org/a/LNT2gmm5SGcMMx3dXDglPFEWv.svg" /></a>
 <p><b>install brain-games and play in brain-progression</b></p>
-<a href="https://asciinema.org/a/RqBzXNPX6thoQfiYLClvssqWA" target="_blank"><img src="https://asciinema.org/a/RqBzXNPX6thoQfiYLClvssqWA.svg" /></a>
+<a href="https://asciinema.org/a/doY9se8nCqyMSdtSVnssDGK4l" target="_blank"><img src="https://asciinema.org/a/doY9se8nCqyMSdtSVnssDGK4l.svg" /></a>
 <p><b>install brain-games and play in brain-prime</b></p>
 <a href="https://asciinema.org/a/hBj6HNXGY54u7RKQTtWtdDbBc" target="_blank"><img src="https://asciinema.org/a/hBj6HNXGY54u7RKQTtWtdDbBc.svg" /></a>
